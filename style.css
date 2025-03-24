@@ -1,0 +1,106 @@
+/* Reset & General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    margin-top: 30px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.search-container input {
+    padding: 12px 20px;
+    width: 60%;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.search-container input:focus {
+    border-color: #666;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-container button {
+    background-color: white;
+    color: gray;
+    border: none;
+    margin-left: -50px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content img {
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Maintain uniformity */
+    object-fit: cover; /* Ensures images fit without distortion */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.content img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Button Styling */
+.content button {
+    background-color:plum;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 8px;
+}
+
+.content button:hover {
+    background-color: lightgray;
+    transform: scale(1.05);
+}
